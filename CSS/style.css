@@ -12,13 +12,14 @@
 
 .quote-card {
     border: 5px solid #211d1d;
-    border-radius: 10px;
+    border-radius: 15px;
     margin: 20px;
     padding: 50px;
     width: 300px;
-    background-color: rgb(196, 97, 173)
+    background-color: rgb(97, 100, 196)
 }      
 
 #btn {
-    
+    border-radius: 10px;
 }
+

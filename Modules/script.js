@@ -1,4 +1,4 @@
-async function fetchData() {
+export async function fetchData() {
 	const url = 'https://famous-quotes4.p.rapidapi.com/random?category=friendship&count=2';
 	const options = {
 	  method: 'GET',
@@ -32,7 +32,3 @@ async function fetchData() {
   }
 
 fetchData();
-
-let btn = document.querySelector("#btn");
-
-btn.addEventListener("click", fetchData);
