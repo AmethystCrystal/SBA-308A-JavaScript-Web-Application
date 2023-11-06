@@ -17,10 +17,10 @@ async function fetchData() {
 		const firstQuote = result[0];
 		const quoteCard = document.createElement('div');
 		quoteCard.classList.add('quote-card');
-		quoteCard.innerHTML = `
-		  <strong>Author:</strong> ${firstQuote.author}<br><br>
-		  <blockquote>"${firstQuote.text}"</blockquote>
-		`;
+		quoteCard.innerHTML = 
+		  `<strong>Author:</strong> ${firstQuote.author}<br><br>
+		  <blockquote>"${firstQuote.text}"</blockquote>`
+		;
 		quotesContainer.appendChild(quoteCard);
 	  } else {
 		console.error('No quotes found.');
@@ -31,3 +31,7 @@ async function fetchData() {
   }
 
 fetchData();
+
+let btn = document.querySelector("#btn");
+
+btn.addEventListener("click", fetchData);
