@@ -1,5 +1,5 @@
 async function fetchData() {
-	const url = 'https://famous-quotes4.p.rapidapi.com/random?category=all&count=2';
+	const url = 'https://famous-quotes4.p.rapidapi.com/random?category=friendship&count=2';
 	const options = {
 	  method: 'GET',
 	  headers: {
@@ -21,6 +21,7 @@ async function fetchData() {
 		  `<strong>Author:</strong> ${firstQuote.author}<br><br>
 		  <blockquote>"${firstQuote.text}"</blockquote>`
 		;
+		quotesContainer.innerHTML = " ";
 		quotesContainer.appendChild(quoteCard);
 	  } else {
 		console.error('No quotes found.');
