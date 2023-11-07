@@ -18,10 +18,10 @@ export async function fetchData() {
 		const quoteCard = document.createElement('div');
 		quoteCard.classList.add('quote-card');
 		quoteCard.innerHTML = 
-		  `<strong>Author:</strong> ${firstQuote.author}<br><br>
-		  <blockquote>"${firstQuote.text}"</blockquote>`
+		  `<b>Author:</b> ${firstQuote.author}<br><br>
+		  <i>"${firstQuote.text}"</i>`
 		;
-		quotesContainer.innerHTML = " ";
+        quotesContainer.innerHTML = " ";
 		quotesContainer.appendChild(quoteCard);
 	  } else {
 		console.error('No quotes found.');
